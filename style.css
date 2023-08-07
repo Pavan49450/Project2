@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Playfair+Display:ital@1&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #f1f3f5
+}
+#whole{
+    display: flex;
+    flex-direction: column;
+}
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Navigation bar:logo and image */
+#logo {
+    margin: 0px 18px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 6px;
+    border-radius: 50%;
+}
+
+#logo img:hover {
+    /* max-height: 52px; */
+    box-shadow: 0px 0px 10px white;
+    background-color: white;
+
+}
+
+/* NAvigation Bar: list styling */
+
+
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 18px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    /* box-shadow: 0 2 0 black; */
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 10px white;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 387px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./Images/bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+span{
+    font-size: 2.8rem;
+    padding: 12px;
+    color: rgb(246, 58, 58);
+}
+
+#services{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    /* height: 318px; */
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    border: 0.1px solid silver;
+    width: 28%;
+    height: 240px;
+
+    margin: 3px 6px;
+    padding: 24px;
+    border-radius: 28px;
+    background-color: white;
+}
+
+#services .box img{
+    display: block;
+    height: 160px;
+    margin:auto;
+}
+#services .box p{
+    font-size: 0.9rem;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    margin-bottom: 95px;
+
+}
+#clients img{
+    height: 60px;
+    margin: 20px;
+
+
+}
+
+#Client-section::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    background: url(./Images/bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 308px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Contact US section */
+#contact{
+    position: relative;
+}
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url(../Project2/Images/contact4.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+#contact-box input{
+
+    width:100%;
+    padding:0.4rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1rem;
+}
+#submit{
+    background-color: #00bcb3;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+#submit:hover{
+    background-color: #4cc4be;
+
+}
+/* About Us Page */
+#about-box{
+    padding: 50px;
+    /* margin-top:20px; */
+    /* margin-bottom:20px; */
+    margin-right:50px;
+    margin-left:50px;
+    border-radius: 4px;
+    border: 0.1px solid silver;
+    background-color: white;
+}
+/* footer */
+footer{
+
+    padding: 9px 20px;
+}
+/* Utlility Classes */
+h1{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+h2{
+    font-size: 1.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: none;
+    background-color: red;
+    margin: 17px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: inherit;
+}
+.btn:hover{
+    /* background-color: rgb(240, 52, 52); */
+    box-shadow: 0px 0px 10px red;
+    
+
+}
+ .center{
+    text-align: center;
+ }
